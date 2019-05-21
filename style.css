@@ -1,0 +1,606 @@
+@font-face {
+  font-family: "JosefinSansLight";
+  src: url("fonts/JosefinSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url('fonts/playfair/playfairdisplay.woff2') format('woff2'), url('playfairdisplay.woff') format('woff'), url('playfairdisplay.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url('fonts/playfair/playfairdisplayitalic.woff2') format('woff2'), url('playfairdisplayitalic.woff') format('woff'), url('playfairdisplayitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('fonts/playfair/playfairdisplaybold.woff2') format('woff2'), url('playfairdisplaybold.woff') format('woff'), url('playfairdisplaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url('fonts/playfair/playfairdisplaybolditalic.woff2') format('woff2'), url('playfairdisplaybolditalic.woff') format('woff'), url('playfairdisplaybolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url('fonts/playfair/playfairdisplayblack.woff2') format('woff2'), url('playfairdisplayblack.woff') format('woff'), url('playfairdisplayblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url('fonts/playfair/playfairdisplayblackitalic.woff2') format('woff2'), url('playfairdisplayblackitalic.woff') format('woff'), url('playfairdisplayblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+body {
+  background-color: #EAEAEA;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 380px;
+  margin: 50px auto 118px;
+}
+
+header, .getRecipeContainer,
+.recipeCatalogue, .recipeContainer,
+.authorStoriesItem, .quickCardsItem {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px #dadada;
+}
+
+header {
+  height: 123px;
+  display: flex;
+  align-items: center;
+  padding-left: 94px;
+  padding-right: 94px;
+}
+
+.headerLogo {
+  width: 87px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 754px;
+  margin-left: 92px;
+}
+
+.navigationList {
+  width: 535px;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigationList li a {
+  text-transform: uppercase;
+  font: bold 16px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+.recipesNavigationList {
+  position: relative;
+}
+
+
+.recipesDropDown li a {
+  list-style: none;
+  text-transform: uppercase;
+  font: bold 12px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+.recipesDropDown li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+.recipesDropDown ul {
+  margin: 0;
+  padding: 0;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipesDropDownContainer {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -41px;
+  background-color: RGBA(0, 0, 0, 0);
+  z-index: 100;
+}
+
+.recipesDropDown {
+  margin-top: 19px;
+  background-color: RGBA(255, 255, 255, 0.5);
+  padding: 24px 28px 19px 28px;
+  box-shadow: 0 0 3px #dcdcdc;
+}
+
+.recipesNavigationList:hover .recipesDropDownContainer {
+  display: block;
+}
+
+.recipesSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px;
+  border-color: #c2c2c2;
+  box-sizing: border-box;
+  height: 26px;
+  padding-left: 27px;
+  padding-right: 27px;
+  width: 162px;
+}
+
+.recipesSearch button {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  background: url("images/SearchIcon.png") center center no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.recipesSearch button:hover {
+  cursor: pointer;
+}
+
+.recipesSearch input {
+  width: 82px;
+  margin: 0 0 0 12px;
+  padding: 0;
+  background-color: #f8f8f8;
+  border: none;
+  font: bold 12px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+  outline: none;
+}
+
+.getRecipeContainer {
+  margin-top: 86px;
+  margin-bottom: 86px;
+  background: #f8f8f8 url("images/photo1.jpg") right top no-repeat;
+  background-size: contain;
+}
+
+.getRecipe {
+  padding-top: 49px;
+  padding-left: 92px;
+  padding-bottom: 56px;
+  position: relative;
+}
+
+.getRecipeLogo {
+  width: 252px;
+}
+
+.getRecipeTextBlock {
+  margin-top: 37px;
+}
+
+.getRecipeTextBlockHeader {
+  width: 352px;
+  color: #921026;
+  text-transform: capitalize;
+  font: bold 24px 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.getRecipeTextDescription {
+  width: 312px;
+  font: bold 16px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+
+.button {
+  width: 105px;
+  height: 28px;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-color: #c2c2c2;
+  text-align: center;
+}
+
+.button a {
+  font: bold 12px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 28px;
+  vertical-align: middle;
+  display: block;
+}
+
+.getRecipePhoto {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.recipeCatalogue {
+  padding-top: 41px;
+  height: 375px;
+  box-sizing: border-box;
+}
+
+.recipeCatalogueItemsContainer {
+  display: flex;
+  width: 1022px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.recipeCatalogueItemPhoto {
+  height: 208px;
+  width: 303px;
+  overflow: hidden;
+}
+
+.recipeCatalogueItemPhoto:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.recipeCatalogueItemHeader {
+  margin: 16px 0 8px 0;
+  padding: 0;
+}
+
+.recipeCatalogueItemHeader a {
+  text-decoration: none;
+  font: bold 18px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+}
+
+.recipeCatalogueItemStatisticsString {
+  font: bold 12px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+}
+
+.recipeContainer {
+  margin-top: 86px;
+  display: flex;
+  align-items: center;
+}
+
+.recipeContainer img {
+  width: 520px;
+}
+
+.recipeContainerDescriprion {
+  margin-left: 35px;
+  width: 515px;
+  height: 320px;
+}
+
+.recipeContainerDescriprionHeader {
+  font: bold 32px 'Playfair Display', serif;
+  color: #006633;
+  margin: 0;
+}
+
+.recipeContainerDescriprionStat {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
+.recipeContainerDescriprionText {
+  height: 200px;
+  margin-top: 24px;
+  overflow-y: scroll;
+}
+
+
+.recipeContainerDescriprionParagraph {
+  width: 490px;
+  font: 16px 'JosefinSansLight', Arial, sans-serif;
+  color: #5c5c5c;
+  margin: 0;
+}
+
+.recipeContainerDescriprionParagraph:nth-child(n+2) {
+  margin-top: 24px;
+}
+
+.recipeContainerDescriprionTextHeader {
+  font: bold 16px 'JosefinSansLight', serif;
+  margin: 24px 0 0 0;
+}
+
+.recipeContainerDescriprionInfo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 151px;
+}
+
+.recipeContainerDescriprionInfo img {
+  width: 14px;
+}
+
+.recipeContainerDescriprionInfo span {
+  font: bold 16px JosefinSansLight, Arial, sans-serif;
+  color: #5c5c5c;
+}
+
+.levelIcon {
+  width: 26px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+  align-items: baseline;
+}
+
+.levelIcon div {
+  width: 3px;
+  border: solid 1px rgb(85, 85, 85);
+}
+
+.levelIcon div:last-child {
+  height: 9px;
+}
+
+.levelIcon div:first-child {
+  height: 21px;
+  border: solid 1px rgb(180, 180, 180);
+}
+
+.levelIcon div:nth-child(2) {
+  height: 17px;
+}
+
+.levelIcon div:nth-child(3) {
+  height: 13px;
+}
+
+.levelIcon[data-level = "Easy"] div:nth-child(n+2) {
+  background-color: rgb(85, 85, 85)
+}
+
+.authorStoriesContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 132px;
+}
+
+.authorStoriesItem {
+  width: 517px;
+  height: 522px;
+}
+
+.authorStoriesItemWrapper {
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articleHeader {
+  margin: 0;
+  padding-bottom: 11px;
+  padding-top: 25px;
+  width: 86%;
+  font: bold italic 20px JosefinSansLight, Arial, sans-serif;
+  border-bottom: solid rgb(221,221,221) 2px;
+  color: rgb(0,0,0);
+}
+
+.errorDiscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorDiscription p {
+  margin: 0;
+}
+
+.errorDiscription p:first-child {
+  margin-bottom: 18px;
+  font: bold 34px JosefinSansLight, Arial, sans-serif;
+  color: rgb(0,0,0);
+}
+
+.errorDiscription p:nth-child(n+2) {
+  font: bold 16px 'Playfair Display', serif;
+  color: rgb(169,169,169);
+  text-transform: uppercase;
+}
+
+.errorAuthorStories {
+  background: url("images/404.png") center center no-repeat;
+}
+
+.authorStoriesItemWrapper.validAuthorStories {
+  justify-content: flex-start;
+}
+
+.authorInformation {
+  margin-top: 24px;
+  width: 444px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.authorTextBlock {
+  width: 290px;
+}
+
+.authorDiscription {
+  height: 96px;
+  border-bottom: solid rgb(221,221,221) 2px;
+}
+
+.authorDiscription h3 {
+  font: bold 24px JosefinSansLight, Arial, sans-serif;
+  color: rgb(0,0,0);
+  margin: 0;
+}
+
+.authorDiscription p {
+  font: bold 16px JosefinSansLight, Arial, sans-serif;
+  color: rgb(0,0,0);
+  margin: 0;
+  margin-top: 12px;
+}
+
+.authorTextBlock .authorSign {
+  text-align: right;
+}
+
+.authorArticle h2 {
+  font: bold italic 20px JosefinSansLight, Arial, sans-serif;
+  color: rgb(0,0,0);
+  margin: 0;
+  margin-top: 26px;
+}
+
+.authorArticle p {
+  font: bold italic 14px JosefinSansLight, Arial, sans-serif;
+  color: rgb(0,0,0);
+  margin: 0;
+  margin-top: 32px;
+}
+
+.socialsList {
+  background: url("images/socials.png") left top no-repeat;
+  margin-top: 12px;
+}
+
+.socialsList a {
+  display: inline-block;
+}
+
+.socialsList a div {
+  height: 15px;
+}
+
+.socialsList a:nth-child(n+2) {
+  margin-left: 13px;
+}
+
+.googlePlusIcon {
+  width: 22px;
+}
+
+.twitterIcon {
+  width: 14px;
+}
+
+.fbIcon {
+  width: 8px;
+}
+
+.pintIcon {
+  width: 15px;
+}
+
+.quickCards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1025px;
+  margin: 75px auto 0;
+}
+
+.quickCardsColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 289px;
+}
+
+.quickCardsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quickCardsItem:nth-child(n+2) {
+  margin-top: 48px;
+}
+
+.quickCardsItemRecipe {
+  font: bold 22px 'Playfair Display', serif;
+  text-align: center;
+  color: #006633;
+}
+
+.quickCardsItemAuthor {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quickCardsItemAuthor img {
+  width: 25%;
+}
+
+.quickCardsItemAuthorInfo {
+  width: 65%;
+}
+
+.quickCardsItemAuthorInfo h3 {
+  font: normal normal 16px JosefinSansLight, Arial, sans-serif;
+  margin: 6px 0 0;
+}
+
+.quickCardsItemAuthorInfo h3:nth-child(2) {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.quickCardsItemAuthorInfo .recipeCatalogueItemStatisticsString img {
+  width: 10px;
+}
