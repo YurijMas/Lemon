@@ -431,7 +431,7 @@ header {
   margin: 0;
   padding-bottom: 11px;
   padding-top: 25px;
-  width: 86%;
+  width: 85%;
   font: bold italic 20px JosefinSansLight, Arial, sans-serif;
   border-bottom: solid rgb(221,221,221) 2px;
   color: rgb(0,0,0);
@@ -653,13 +653,13 @@ header {
   background-color: RGB(85,85,85);
 }
 
-.headerTargetCard {
+.greenHeader {
   font: bold 20px 'Playfair Display', serif;
-  width: 75%;
+  width: 100%;
+  margin-left: 15%;
   text-align: left;
   color: #006633;
   margin-bottom: 0;
-  display: none;
 }
 
 
@@ -688,9 +688,10 @@ input[type="radio"] {
   height: 0;
 }
 
-.recipesWrapper {
+.quickCardsWrapper {
   width: 85%;
   display: flex;
+  margin-top: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -698,7 +699,6 @@ input[type="radio"] {
 .levelRecipe {
   display: flex;
   width: 70%;
-  margin-top: 15px;
   margin-bottom: 30px;
   justify-content: space-between;
 }
@@ -792,4 +792,54 @@ input[type="radio"] {
   margin-bottom: 20px;
   justify-content: flex-end;
   width: 100%;
+}
+
+.tagsList {
+  margin: 0;
+  margin-bottom: 30px;
+  font: bold 12px JosefinSansLight, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 29px;
+  word-spacing: 9px;
+}
+
+.tagsList a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+.headerPopularNow {
+  font: bold 32px 'Playfair Display', serif;
+  color: RGB(146,16,38);
+  border: none;
+}
+
+.popularNowTextHeader {
+  font: bold 22px JosefinSansLight, Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.popularNoTextBlock {
+  margin-bottom: 18px;
+}
+
+.popularNoTextBlock p {
+  font: italic bold 16px JosefinSansLight, Arial, sans-serif;
+  margin: 0;
+}
+
+.popularNowQuickCard {
+  background-image: url("images/FrozenCoffee.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 123px;
+}
+
+.getRecipePopularNow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
