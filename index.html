@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <link rel="shortcut icon" href="images/lemonTitle.png" type="image/png">
 </head>
 <body>
   <div class="wrapper">
@@ -435,9 +436,11 @@
                 </p>
               </div>
             </div>
+            <!--
             <div class="quickCardsItem">
               <h3 class = "articleHeader">Calendar</h3>
             </div>
+          -->
           </div>
           <div class="quickCardsColumn">
             <div class="quickCardsItem popularNowQuickCard">
@@ -475,21 +478,21 @@
                     <h4>easy</h4>
                     <div class="statisticVisuality">
                       <div class="statisticVisualityLine easyLine"></div>
-                      <span>15mins</span>
+                      <span>&nbsp;15mins</span>
                     </div>
                   </div>
                   <div class="timeLineStatisticsItem">
                     <h4>middle</h4>
                     <div class="statisticVisuality">
                       <div class="statisticVisualityLine middleLine"></div>
-                      <span>25mins</span>
+                      <span>&nbsp;25mins</span>
                     </div>
                   </div>
                   <div class="timeLineStatisticsItem">
                     <h4>long</h4>
                     <div class="statisticVisuality">
                       <div class="statisticVisualityLine longLine"></div>
-                      <span>40mins</span>
+                      <span>&nbsp;40mins</span>
                     </div>
                   </div>
                 </div>
@@ -502,16 +505,68 @@
           </div>
         </div>
 
-        <div>
-
-        </div>
-
-        <div>
-
+        <div class = "formsBlock">
+          <div class="formItem login">
+            <h3 class = "articleHeader">Login</h3>
+            <div class="formWrapper">
+              <h4 class="formHeader">Login for LEMON</h4>
+              <form action="" class="form loginForm">
+                <input type="text" placeholder="email or login" class = "formsInput">
+                <input type="password" placeholder="password" class = "formsInput">
+                <div class="checkBoxFormLine">
+                  <div class="checkBoxWrapper">
+                    <input type="checkbox" id = "rememberMeCheckbox">
+                    <label for="rememberMeCheckbox">Remember me</label>
+                  </div>
+                  <a href="#">Forgot your password?</a>
+                </div>
+                <button class="button" type="submit">LOGIN</button>
+              </form>
+            </div>
+          </div>
+          <div class="formItem sign">
+            <h3 class = "articleHeader">Sign in</h3>
+            <div class="formWrapper">
+              <h4 class="formHeader">Sign in for LEMON</h4>
+              <form action="" class="form loginForm">
+                <input type="text" placeholder="email" class = "formsInput">
+                <input type="text" placeholder="user name" class = "formsInput">
+                <input type="password" placeholder="password" class = "formsInput">
+                <input type="password" placeholder="repeat password" class = "formsInput">
+                <button class="button" type="submit">SIGN UP</button>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
-
+        <div class="footerMenu">
+          <img src="images/footerLogo.png" alt="Lemon">
+          <ul class="footerLinks">
+            <li>
+              <a href="https://yandex.ru" class="">home</a>
+            </li>
+            <li>
+              <a href="https://yandex.ru" class="">recipes</a>
+            </li>
+            <li>
+              <a href="https://yandex.ru" class="">photo galleries</a>
+            </li>
+            <li>
+              <a href="https://yandex.ru" class="">videos</a>
+            </li>
+            <li>
+              <a href="https://yandex.ru" class="">all categories</a>
+            </li>
+          </ul>
+          <span><span class="copyrightCharacter">&copy;</span>2016-2017 LEMON. All right reserved</span>
+          <div class = "socialsLinksFooter socialsList">
+            <a href="https://plus.google.com" title = "Google+"><div class="googlePlusIcon"></div></a><!--
+-----------------------><a href="https://twitter.com" title = "Twitter"><div class="twitterIcon"></div></a><!--
+-----------------------><a href="https://www.facebook.com" title = "Facebook"><div class="fbIcon"></div></a><!--
+-----------------------><a href="https://www.pinterest.ru" title = "Pinterest"><div class="pintIcon"></div></a>
+          </div>
+        </div>
       </footer>
   </div>
   <script src = "js/ImageChanger.js"></script>
