@@ -1050,6 +1050,7 @@ footer {
   right: 0;
 }
 
+/*
 @media (max-device-width: 800px) {
   .wrapper {
     width: 100%;
@@ -1184,3 +1185,4 @@ footer {
     display: none;
   }
 }
+*/
