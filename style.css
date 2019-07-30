@@ -54,6 +54,8 @@
   background-color: RGB(85,85,85);
 }
 
+
+
 body {
   background-color: #EAEAEA;
   margin: 0;
@@ -1046,4 +1048,139 @@ footer {
   position: absolute;
   top: 105%;
   right: 0;
+}
+
+@media (max-device-width: 800px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .recipeCatalogue {
+    display: none;
+  }
+
+  .recipeContainer {
+    display: none;
+  }
+
+
+
+  .getRecipeContainer {
+    display: none;
+  }
+
+  .authorStoriesContainer {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .authorStoriesItem {
+    width: 100%;
+  }
+
+  .errorAuthorStories {
+    display: none;
+  }
+
+  .quickCards {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .quickCardsColumn {
+    display: flex;
+    width: 100%;
+  }
+
+  .quickCardsItem:nth-child(n+2) {
+    margin-top: 0;
+  }
+
+  .quickCardsItemTime {
+    display: none;
+  }
+
+  .formsBlock {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .formItem {
+    width: 100%;
+  }
+  footer {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footerMenu {
+    width: 85%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footerLinks li {
+    display: block;
+  }
+
+  .footerLinks li:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .socialsLinksFooter {
+    top: auto;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .quickCardsItemAuthor img {
+    width: 10%;
+  }
+
+  .quickCardsItem {
+    justify-content: center;
+  }
+
+  .quickCardsItemAuthorInfo {
+    width: auto;
+  }
+
+  .quickCardsItemAuthor {
+    justify-content: center;
+  }
+
+  .getRecipePopularNow {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navigationList {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .recipesSearch {
+    display: none;
+  }
 }
