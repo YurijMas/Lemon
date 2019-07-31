@@ -1055,12 +1055,10 @@ footer {
 
 /*Small screens*/
 @media (max-device-width: 800px) {
-  body {
-    width: 100%;
-  }
 
   .wrapper {
-    width: 100%;
+    width: 100vw;
+	box-sizing: border-box;
     margin: 0 auto;
   }
 
