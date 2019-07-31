@@ -1055,11 +1055,12 @@ footer {
 
 /*Small screens*/
 @media (max-device-width: 800px) {
-
+	
   .wrapper {
     width: 100vw;
 	box-sizing: border-box;
     margin: 0 auto;
+	overflow: hidden;
   }
 
   .recipeCatalogue {
