@@ -1055,7 +1055,7 @@ footer {
 
 /*Small screens*/
 @media (max-device-width: 800px) {
-	
+
   .wrapper {
     width: 100vw;
 	box-sizing: border-box;
@@ -1215,5 +1215,24 @@ footer {
 
   .recipesSearch {
     display: none;
+  }
+
+  .authorInformation {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10%;
+  }
+
+  .authorStoriesItemWrapper {
+    height: auto;
+  }
+
+  .authorStoriesItem {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .authorTextBlock {
+    width: 60%;
   }
 }
